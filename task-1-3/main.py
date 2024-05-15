@@ -1,4 +1,5 @@
-from node import Node,insert, find_sum_values, find_max_value_node, find_min_value_node
+from node import Node, insert, calculate_sum_values, find_max_value_node, find_min_value_node
+
 
 def main():
 
@@ -21,8 +22,9 @@ def main():
     maximum = find_max_value_node(root)
     print(f"The maximum value in the tree is {maximum.val}.")
 
-    sum_values = find_sum_values(root)
+    sum_values = calculate_sum_values(root)
     print(f"The sum of values in the tree is {sum_values}.")
+
 
 if __name__ == "__main__":
     main()

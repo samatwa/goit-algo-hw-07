@@ -33,8 +33,8 @@ def find_max_value_node(root):
         current = current.right
     return current
 
-def find_sum_values(root):
+def calculate_sum_values(root):
     if root is None:
         return 0
     else:
-        return root.val + find_sum_values(root.left) + find_sum_values(root.right)
+        return root.val + calculate_sum_values(root.left) + calculate_sum_values(root.right)

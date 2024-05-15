@@ -29,6 +29,6 @@ root_comment.add_reply(reply2)
 reply1_1 = Comment("You can kick it out...", "John")
 reply1.add_reply(reply1_1)
 
-# reply1.remove_reply()
+reply1.remove_reply()
 
 root_comment.display()
