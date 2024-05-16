@@ -25,13 +25,13 @@ def find_min_value_node(root):
     current = root
     while current.left:
         current = current.left
-    return current
+    return current.val
 
 def find_max_value_node(root):
     current = root
     while current.right:
         current = current.right
-    return current
+    return current.val
 
 def calculate_sum_values(root):
     if root is None:
